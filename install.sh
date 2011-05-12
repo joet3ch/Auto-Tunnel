@@ -18,6 +18,6 @@ chmod 755 /etc/vpnc/vpnc-script
 
 ## add cron job
 crontab -l > /tmp/auto_tunnel_tmp_cron_file
-echo "*/1 * * * * /opt/apps/auto_tunnel/link_checker.sh &" | tee -a /tmp/auto_tunnel_tmp_cron_file
+echo "*/5 * * * * /opt/apps/auto_tunnel/link_checker.sh &" | tee -a /tmp/auto_tunnel_tmp_cron_file
 crontab /tmp/auto_tunnel_tmp_cron_file
 rm /tmp/auto_tunnel_tmp_cron_file
