@@ -1,4 +1,3 @@
-
 #Auto Tunnel
 
 ###A utility that tries to keep a vpn tunnel established using *vpnc*
